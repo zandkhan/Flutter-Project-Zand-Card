@@ -34,7 +34,7 @@ class Item extends StatelessWidget {
               child: Icon(
                 icon ?? Icons.ac_unit,
                 color: iconColor??Colors.white,
-                size: 24.0,
+                size: 26.0,
               ),
             ),
           ),

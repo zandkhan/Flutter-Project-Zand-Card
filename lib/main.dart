@@ -40,7 +40,6 @@ class MyApp extends StatelessWidget {
                   children: const [
                     LogoApp(),
                     ProfileImage(),
-                    NameProfile(),
                     ItemsApp(),
                   ],
                 ),
@@ -70,15 +69,20 @@ class ProfileImage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Expanded(
-      flex: 2,
-      child: CircleAvatar(
-        backgroundColor: Colors.redAccent,
-        radius: 54,
-        child: CircleAvatar(
-          radius: 50,
-          backgroundImage: AssetImage('images/my_profile.jfif'),
-        ),
+    return Expanded(
+      flex: 3,
+      child: Column(
+        children:const [
+          CircleAvatar(
+            backgroundColor: Colors.blue,
+            radius: 66,
+            child: CircleAvatar(
+              radius: 60,
+              backgroundImage: AssetImage('images/my_profile.jfif'),
+            ),
+          ),
+          NameProfile()
+        ],
       ),
     );
   }
@@ -89,8 +93,8 @@ class NameProfile extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Expanded(
-      flex: 1,
+    return Padding(
+      padding: const EdgeInsets.only(top: 10),
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: const [
