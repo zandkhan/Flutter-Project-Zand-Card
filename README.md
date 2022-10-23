@@ -2,7 +2,8 @@
 
 This project is designed to display a person's work information on different platforms.
 
-![plot](images/app_image.jpg)
+<img src = "images/app_image.jpg" width = 300/>
+
 ## Getting Started
 
 This project is a starting point for a Flutter application.
